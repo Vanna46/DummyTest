@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite CFamily]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listener.CutomeListener"/>
+  </listeners>
+  <test thread-count="5" name="Test CC(failed)">
+    <classes>
+      <class name="c_family.CC">
+        <methods>
+          <include name="existing"/>
+          <include name="init"/>
+          <include name="testCC"/>
+        </methods>
+      </class> <!-- c_family.CC -->
+    </classes>
+  </test> <!-- Test CC(failed) -->
+  <test thread-count="5" name="Test CCC(failed)">
+    <classes>
+      <class name="c_family.CCC">
+        <methods>
+          <include name="testCCC"/>
+          <include name="existing"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- c_family.CCC -->
+    </classes>
+  </test> <!-- Test CCC(failed) -->
+</suite> <!-- Failed suite [Suite CFamily] -->

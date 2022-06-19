@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite AFamily]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listener.CutomeListener"/>
+  </listeners>
+  <test thread-count="5" name="Test AA(failed)">
+    <classes>
+      <class name="a_family.AA">
+        <methods>
+          <include name="testAA"/>
+          <include name="existing"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- a_family.AA -->
+    </classes>
+  </test> <!-- Test AA(failed) -->
+  <test thread-count="5" name="Test AAA(failed)">
+    <classes>
+      <class name="a_family.AAA">
+        <methods>
+          <include name="existing"/>
+          <include name="testAAA"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- a_family.AAA -->
+    </classes>
+  </test> <!-- Test AAA(failed) -->
+</suite> <!-- Failed suite [Suite AFamily] -->

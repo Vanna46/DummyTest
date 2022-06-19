@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-06T23:56:36Z" name="Suite BFamily" finished-at="2022-06-06T23:56:38Z" duration-ms="2329">
+    <groups>
+    </groups>
+    <test started-at="2022-06-06T23:56:36Z" name="Test B" finished-at="2022-06-06T23:56:38Z" duration-ms="2185">
+      <class name="b_family.B">
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:36Z" name="init" finished-at="2022-06-06T23:56:36Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=B.testB(java.lang.String, java.lang.String)[pri:0, instance:b_family.B@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:36Z" name="testB" data-provider="getDataBFamily" finished-at="2022-06-06T23:56:37Z" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:37Z" name="existing" finished-at="2022-06-06T23:56:37Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:37Z" name="testB" data-provider="getDataBFamily" finished-at="2022-06-06T23:56:38Z" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Python]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:37Z" name="init" finished-at="2022-06-06T23:56:37Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=B.testB(java.lang.String, java.lang.String)[pri:0, instance:b_family.B@4b41dd5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:b_family.B@4b41dd5c]" started-at="2022-06-06T23:56:38Z" name="existing" finished-at="2022-06-06T23:56:38Z" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+      </class> <!-- b_family.B -->
+    </test> <!-- Test B -->
+    <test started-at="2022-06-06T23:56:38Z" name="Test BB" finished-at="2022-06-06T23:56:38Z" duration-ms="10">
+      <class name="b_family.BB">
+        <test-method signature="testBB(java.lang.String, java.lang.String)[pri:0, instance:b_family.BB@38089a5a]" started-at="2022-06-06T23:56:38Z" name="testBB" data-provider="getDataBBFamily" finished-at="2022-06-06T23:56:38Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void b_family.BB.testBB(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataBBFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void b_family.BB.testBB(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataBBFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBB -->
+      </class> <!-- b_family.BB -->
+    </test> <!-- Test BB -->
+    <test started-at="2022-06-06T23:56:38Z" name="Test BBB" finished-at="2022-06-06T23:56:38Z" duration-ms="22">
+      <class name="b_family.BBB">
+        <test-method signature="testBBB(java.lang.String, java.lang.String)[pri:0, instance:b_family.BBB@1e097d59]" started-at="2022-06-06T23:56:38Z" name="testBBB" data-provider="getDataBBBFamily" finished-at="2022-06-06T23:56:38Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void b_family.BBB.testBBB(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataBBBFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void b_family.BBB.testBBB(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataBBBFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBBB -->
+      </class> <!-- b_family.BBB -->
+    </test> <!-- Test BBB -->
+  </suite> <!-- Suite BFamily -->
+  <suite started-at="2022-06-06T23:56:41Z" name="Suite CompleteFamily" finished-at="2022-06-06T23:56:41Z" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Suite CompleteFamily -->
+  <suite started-at="2022-06-06T23:56:32Z" name="Suite AFamily" finished-at="2022-06-06T23:56:36Z" duration-ms="3750">
+    <groups>
+    </groups>
+    <test started-at="2022-06-06T23:56:32Z" name="Test A" finished-at="2022-06-06T23:56:36Z" duration-ms="3394">
+      <class name="a_family.A">
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:32Z" name="init" finished-at="2022-06-06T23:56:33Z" duration-ms="633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=A.testA(java.lang.String, java.lang.String)[pri:0, instance:a_family.A@63f259c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:33Z" name="testA" data-provider="getDataAFamily" finished-at="2022-06-06T23:56:34Z" duration-ms="1030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mathematics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:34Z" name="existing" finished-at="2022-06-06T23:56:35Z" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:35Z" name="init" finished-at="2022-06-06T23:56:35Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=A.testA(java.lang.String, java.lang.String)[pri:0, instance:a_family.A@63f259c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:35Z" name="testA" data-provider="getDataAFamily" finished-at="2022-06-06T23:56:36Z" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sceince]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:a_family.A@63f259c3]" started-at="2022-06-06T23:56:36Z" name="existing" finished-at="2022-06-06T23:56:36Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+      </class> <!-- a_family.A -->
+    </test> <!-- Test A -->
+    <test started-at="2022-06-06T23:56:36Z" name="Test AA" finished-at="2022-06-06T23:56:36Z" duration-ms="32">
+      <class name="a_family.AA">
+        <test-method signature="testAA(java.lang.String, java.lang.String)[pri:0, instance:a_family.AA@363a52f]" started-at="2022-06-06T23:56:36Z" name="testAA" data-provider="getDataAAFamily" finished-at="2022-06-06T23:56:36Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void a_family.AA.testAA(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataAAFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void a_family.AA.testAA(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataAAFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+      </class> <!-- a_family.AA -->
+    </test> <!-- Test AA -->
+    <test started-at="2022-06-06T23:56:36Z" name="Test AAA" finished-at="2022-06-06T23:56:36Z" duration-ms="9">
+      <class name="a_family.AAA">
+        <test-method signature="testAAA(java.lang.String, java.lang.String)[pri:0, instance:a_family.AAA@c9d0d6]" started-at="2022-06-06T23:56:36Z" name="testAAA" data-provider="getDataAAAFamily" finished-at="2022-06-06T23:56:36Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void a_family.AAA.testAAA(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataAAAFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void a_family.AAA.testAAA(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataAAAFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAAA -->
+      </class> <!-- a_family.AAA -->
+    </test> <!-- Test AAA -->
+  </suite> <!-- Suite AFamily -->
+  <suite started-at="2022-06-06T23:56:38Z" name="Suite CFamily" finished-at="2022-06-06T23:56:41Z" duration-ms="2208">
+    <groups>
+    </groups>
+    <test started-at="2022-06-06T23:56:38Z" name="Test C" finished-at="2022-06-06T23:56:41Z" duration-ms="2177">
+      <class name="c_family.C">
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:38Z" name="init" finished-at="2022-06-06T23:56:38Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testC status=SUCCESS method=C.testC(java.lang.String, java.lang.String)[pri:0, instance:c_family.C@32c4e8b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:38Z" name="testC" data-provider="getDataCFamily" finished-at="2022-06-06T23:56:40Z" duration-ms="1012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User13]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Javascript]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:40Z" name="existing" finished-at="2022-06-06T23:56:40Z" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:40Z" name="init" finished-at="2022-06-06T23:56:40Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testC status=SUCCESS method=C.testC(java.lang.String, java.lang.String)[pri:0, instance:c_family.C@32c4e8b2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:40Z" name="testC" data-provider="getDataCFamily" finished-at="2022-06-06T23:56:41Z" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User14]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="existing()[pri:0, instance:c_family.C@32c4e8b2]" started-at="2022-06-06T23:56:41Z" name="existing" finished-at="2022-06-06T23:56:41Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing -->
+      </class> <!-- c_family.C -->
+    </test> <!-- Test C -->
+    <test started-at="2022-06-06T23:56:41Z" name="Test CC" finished-at="2022-06-06T23:56:41Z" duration-ms="6">
+      <class name="c_family.CC">
+        <test-method signature="testCC(java.lang.String, java.lang.String)[pri:0, instance:c_family.CC@2c07545f]" started-at="2022-06-06T23:56:41Z" name="testCC" data-provider="getDataCCFamily" finished-at="2022-06-06T23:56:41Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void c_family.CC.testCC(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataCCFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void c_family.CC.testCC(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataCCFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCC -->
+      </class> <!-- c_family.CC -->
+    </test> <!-- Test CC -->
+    <test started-at="2022-06-06T23:56:41Z" name="Test CCC" finished-at="2022-06-06T23:56:41Z" duration-ms="6">
+      <class name="c_family.CCC">
+        <test-method signature="testCCC(java.lang.String, java.lang.String)[pri:0, instance:c_family.CCC@7f0d96f2]" started-at="2022-06-06T23:56:41Z" name="testCCC" data-provider="getDataCCCFamily" finished-at="2022-06-06T23:56:41Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void c_family.CCC.testCCC(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataCCCFamily in class dataprovider_repository.RepoData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void c_family.CCC.testCCC(java.lang.String,java.lang.String) throws java.lang.Exception requires a @DataProvider named : getDataCCCFamily in class dataprovider_repository.RepoData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCCC -->
+      </class> <!-- c_family.CCC -->
+    </test> <!-- Test CCC -->
+  </suite> <!-- Suite CFamily -->
+</testng-results>
